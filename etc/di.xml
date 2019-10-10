@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!-- This replaces some of the default functionality of Magento_Newsletter to add a new success email template and to send a reward coupon to the confirmed subscriber -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Newsletter\Model\Subscriber" type="Infocube\Newsletter\Model\Subscriber" />
+</config>

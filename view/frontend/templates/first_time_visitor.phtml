@@ -1,0 +1,22 @@
+<!-- This whole template is used to display the different dialogs during the newsletter registration -->
+
+<!-- This whole element is displayed when a new store visitor is detected -->
+<div class="form_container" style="display:none">
+    <div class="input_container">
+        <div class="input_label">Email: </div>
+        <div class="input_field"><input data-validate="{required:true, 'validate-email':true}" id="nl_email" type="text" name="newsletter_email" /></div>
+    </div>
+    <div class="form_note"><span class="fa fa-info-circle"></span>By registering to the newsletter you will receive a
+         <?php echo $this->getCouponAmount() . $this->getStoreCurrency(); ?> coupon, only requirement is email confirmation.
+    </div>
+    <div class="form_note"><span class="fa fa-info-circle"></span></span><i>By clicking 'Register to the newsletter' you are agreeing that your email
+            will be used for receiving promotional content from our store.</i>
+    </div>
+</div>
+
+<!-- This is displayed when newsletter registration has failed for whatever reason -->
+<div class="nl_failed" style="display: none"><span class="fa fa-times-circle"></span>Something went wrong. Please try again later.</div>
+
+<!-- This is displayed when the user has successfully registered to the newsletter and needs to verify their email -->
+<div class="nl_success" style="display: none"><span class="fa fa-check-circle"></span>Thank you for registering. Please check your
+                                                                email for the verification link.</div>

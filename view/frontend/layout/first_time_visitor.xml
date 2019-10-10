@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- This is the layout for the newsletter registration form modal. This imports the required files to build and style a functional modal -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Infocube_Newsletter::js/newsletter_form.js" />
+        <css src="Infocube_Newsletter::css/newsletter_form.css" />
+    </head>
+    <referenceContainer name="content">
+        <block class="Infocube\Newsletter\Block\FirstTimeVisitor" name="first_time_visitor" template="first_time_visitor.phtml" />
+    </referenceContainer>
+</page>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!-- Sets customized email templates -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="infocube_subscription_confirm_email_template" label="Newsletter Subscription Success" file="sub_success.html" type="html" module="Infocube_Newsletter" area="frontend"/>
+</config>

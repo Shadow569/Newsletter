@@ -1,0 +1,13 @@
+<!--@subject {{trans "Newsletter subscription success"}} @-->
+<!--@vars {
+"var coupon_code":"Coupon Code",
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<p>{{trans "Thank you for subscribing to the newsletter.<br /> Your subscription is now active. Below is your coupon code: "}}</p>
+<div>
+    <b>
+        {{var coupon_code}}
+    </b>
+</div>
+{{template config_path="design/email/footer_template"}}

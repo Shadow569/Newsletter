@@ -1,0 +1,147 @@
+/*
+    This styles the newsletter popup modal accordingly
+    and adds appropriate media queries for responsive content.
+ */
+
+.newsletter_form_modal > .modal-inner-wrap{
+    border-radius:0.5em;
+}
+
+.newsletter_form_modal > .modal-inner-wrap > .modal-header{
+    text-align: center;
+    background: #06A;
+    color: #FFF;
+    border-bottom-color: #BBB;
+    padding: 1%;
+}
+
+.newsletter_form_modal > .modal-inner-wrap > .modal-footer{
+    background: #EEE;
+    font-size: 130%;
+    padding: 1%;
+}
+
+
+.newsletter_form_modal > .modal-inner-wrap > .modal-header > .action-close::before{
+     color:#FFF !important;
+ }
+
+.newsletter_form_modal > .modal-inner-wrap > .modal-header > .action-close:hover{
+    background: #AAA !important;
+}
+
+.input_container{
+    margin:1%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.input_label {
+    font-size: 150%;
+    width: 5%;
+    display: inline-block;
+    text-align: right;
+}
+
+.input_field{
+    width: 93%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.newsletter_form_modal > .modal-inner-wrap > .modal-content {
+    border-radius:0 !important;
+}
+
+.newsletter_form_modal > .modal-inner-wrap > .modal-header > #modal-title-1{
+    border: none !important;
+    margin: 0 auto !important;
+}
+
+.nl_submit{
+    background: #08F !important;
+    padding: 1% 2%;
+    color: #FFF !important;
+    border-radius: 0.2em;
+    font-size: 130%;
+    box-shadow: none !important;
+    margin-right:1%;
+}
+
+.nl_failed{
+    background:#F7AAAA;
+    border:0.1em solid #FF0000;
+    margin:1%;
+    margin-top:2%;
+    font-size:140%;
+    padding:1%;
+}
+
+.nl_failed > .fa-times-circle{
+    color: #FF0000;
+    font-size: 150%;
+    margin-right: 1%;
+    vertical-align: bottom;
+}
+
+.nl_success{
+    margin: 1%;
+    margin-top: 2%;
+    padding: 1%;
+    background: #AF5;
+    font-size: 140%;
+    border: 0.1rem solid #8D3;
+}
+
+.nl_success > .fa-check-circle{
+    font-size: 150%;
+    vertical-align: bottom;
+    margin-right: 1%;
+    color: #080;
+}
+
+
+
+.nl_submit > span{
+    width:100% !important;
+}
+
+.nl_submit:hover{
+    background: #06C !important;
+    color:#FFF !important;
+}
+
+.fa-info-circle{
+    color: #06C;
+    margin-right: 1%;
+    font-size: 180% !important;
+    vertical-align: middle;
+}
+
+.form_note{
+    font-size: 120%;
+    margin:1%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .input_label{
+        width:10%;
+        text-align:left;
+    }
+    .input_field{
+        width:87%;
+        text-align:left;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .input_label{
+        width:100%;
+        text-align:left;
+    }
+    .input_field{
+        width:100%;
+        text-align:left;
+    }
+}

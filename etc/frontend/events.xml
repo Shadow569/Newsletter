@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file configure event listeners(or observers) for the specified events. This module should handle 'visitor_init' and 'layout_load_before" events -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!-- This sets the observer for the visitor_init event -->
+    <event name="visitor_init">
+        <observer name="observe_visitors" instance="Infocube\Newsletter\Observer\FirstTimeVisitorObserver" />
+    </event>
+    <!-- This sets the observer for the layout_load_before event -->
+    <event name="layout_load_before">
+        <observer name="add_newsletter_form" instance="Infocube\Newsletter\Observer\FormCreator" />
+    </event>
+</config>

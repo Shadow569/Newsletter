@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- This is the file which handle the request routes. The specific file generates a new main path for this module -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="newsletter" frontName="nl_new_user">
+            <module name="Infocube_Newsletter" />
+        </route>
+    </router>
+</config>
